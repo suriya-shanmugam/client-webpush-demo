@@ -58,13 +58,13 @@ function App() {
       };
 
       // Assume we have the userID (e.g., from the logged-in user context)
-      const userID = 'user123'; // Replace with actual userID from your app context
+      const userID = '674a99c0ef55673986ccab87'; // Replace with actual userID from your app context
 
       // Send the subscription details to the backend API to register the device
       const userData = {
         userID,
-        username: 'john_doe', // Replace with actual username
-        email: 'john.doe@example.com', // Replace with actual email
+        username: 'ran1', // Replace with actual username
+        email: 'ran1@example.com', // Replace with actual email
       };
 
       const response = await axios.post('http://localhost:5000/api/user/add', {

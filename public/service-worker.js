@@ -4,8 +4,8 @@ self.addEventListener("push", (event) => {
   
   const data = event.data ? event.data.json() : {};
   const title = data.title || "New Notification";
-  const message = data.message || "You have a new message";
-  const url =  data.url || "https://google.com"; // Default URL if none provided
+  const message = data.jobTitle || "You have a new message";
+  const url =  data.jobLink || "https://google.com"; // Default URL if none provided
 
   const options = {
     body: message,
